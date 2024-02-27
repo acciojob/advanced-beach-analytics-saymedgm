@@ -49,13 +49,34 @@ public class BeachSystem {
     }
 
     private static void addBeach(Scanner scanner, List<Beach> beaches) {
-    	//your code goes here
+        System.out.println("Enter Beach Name:");
+        scanner.nextLine(); // Consume the newline character
+        String name = scanner.nextLine();
+
+        System.out.println("Enter Beach Location:");
+        String location = scanner.nextLine();
+
+        System.out.println("Enter Average Yearly Visitors:");
+        int yearlyVisitors = scanner.nextInt();
+
+        System.out.println("Enter Beach Rating:");
+        double rating = scanner.nextDouble();
+
+        Beach beach = new Beach(name, location, yearlyVisitors, rating);
+        beaches.add(beach);
 
         System.out.println("Beach added successfully!");
     }
 
     private static void displayBeaches(List<Beach> beaches) {
-    	//your code goes here
+        System.out.println("Beaches:");
+
+        if (beaches.isEmpty()) {
+            System.out.println("No beaches added yet.");
+        } else {
+            for (Beach beach : beaches) {
+                System.out.println(beach);
+            }
+        }
     }
 }
-

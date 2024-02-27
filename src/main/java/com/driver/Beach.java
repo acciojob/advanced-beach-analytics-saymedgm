@@ -14,28 +14,23 @@ public class Beach {
     }
 
     public String getName() {
-    	//your code goes here
         return name;
     }
 
     public String getLocation() {
-    	//your code goes here
         return location;
     }
 
     public int getYearlyVisitors() {
-    	//your code goes here
         return yearlyVisitors;
     }
 
     public double getRating() {
-    	//your code goes here
         return rating;
     }
 
     @Override
     public String toString() {
-    	//your code goes here
         return "Beach{name='" + name + "', location='" + location + "', yearlyVisitors=" + yearlyVisitors + ", rating=" + rating + '}';
     }
 }
